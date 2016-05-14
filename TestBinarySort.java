@@ -6,5 +6,6 @@ public class TestBinarySort{
 		for(int i = 0;i<dig.length;i++){
 			bs.Add(bs.root,new Integer(dig[i]));
 		}
+		bs.sort(bs.root);
 	}
 }
