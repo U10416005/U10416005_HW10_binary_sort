@@ -29,5 +29,11 @@ public class BinarySort{
 		}
 		return node;
 	}
-	
+	public void sort(Node node) {
+		if (node != null) {
+			sort(node.right);
+			System.out.print(((Integer) node.element).intValue() + " ");
+			sort(node.left);
+  		}
+	}
 }
