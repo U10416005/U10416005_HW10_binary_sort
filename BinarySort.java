@@ -1,9 +1,25 @@
 //U10416005ªL«Ø¦t
 public class BinarySort{
 	//Data field
+	public Object element;
+	public Node left;
+	public Node right;
 	public Node init;
-	//Constructor
-	public BinarySort(Object e){
+	//no-arg Constructor
+	public BinarySort(){
+		
+	}
+	//two Contructors
+	public BinarySort(Object element){
+		this(element,null,null);
+	}
+	public BinarySort(Object element,Node left,Node right){
+		this.element = element;
+		this.left = left;
+		this.right = right;
+	}
+	//method to move the node
+	public void nodeSort(Object e){
 		init = new Node(e);
 	}
 	//method to Add the number to node
